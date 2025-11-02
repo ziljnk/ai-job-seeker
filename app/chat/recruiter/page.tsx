@@ -58,7 +58,6 @@ RENDERING RESULTS:
       </header>
       <main className="flex-1 px-2 sm:p-4">
         <div className="mx-auto max-w-4xl">
-          {/* <JobsTools /> */}
           <JobsTools />
           <JobsGenerativeUI />
           <CopilotChat

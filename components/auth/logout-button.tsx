@@ -20,7 +20,7 @@ export default function LogoutButton({ redirectTo = "/login", className = "", la
     try {
       await supabase.auth.signOut();
       router.push(redirectTo);
-      router.refresh();
+      window.location.reload();
     } finally {
       setLoading(false);
     }

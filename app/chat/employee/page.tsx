@@ -61,7 +61,7 @@ RENDERING RESULTS:
           <JobsTools />
           <JobsGenerativeUI />
           <CopilotChat
-            className="h-full"
+            className="h-[calc(100vh-8rem)]"
             instructions={instructions}
             labels={{ title: "Career Copilot", initial: "Hi! Tell me about the roles you’re targeting." }}
           />
