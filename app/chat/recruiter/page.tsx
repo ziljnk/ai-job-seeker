@@ -46,7 +46,7 @@ RENDERING RESULTS:
 - When showing a company’s openings, call renderCompanyJobs({ company?, jobs, meta? }). Pass the company if you have it, otherwise rely on jobs[0].company_info.`;
 
   return (
-    <div className="flex min-h-screen flex-col bg-background text-foreground">
+    <div className="flex flex-col bg-background text-foreground">
       <header className="flex items-center justify-between border-b border-white/10 p-4">
         <h1 className="text-lg font-semibold">Candidate Finder Chat</h1>
         <div className="flex items-center gap-3">
@@ -61,7 +61,7 @@ RENDERING RESULTS:
           <JobsTools />
           <JobsGenerativeUI />
           <CopilotChat
-            className="h-[calc(100vh-8rem)]"
+            className="h-[calc(100vh-13rem)]"
             instructions={instructions}
             labels={{ title: "Recruiter Copilot", initial: "Hi! What role are you hiring for?" }}
           />
